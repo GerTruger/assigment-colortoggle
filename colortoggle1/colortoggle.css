@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-color: steelblue;
+    display: grid;
+    grid-template-rows: 15vh 48vh 35vh;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+header {
+    position: relative;
+    display: flex;
+    background-color: skyblue;
+    width: 100vw;
+    grid-row: 1;
+}
+h1 {
+    position: absolute;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 4em;
+    transform: translate(100%,35%);
+    width: 34vw;
+    height: 120px;
+    border-radius: 60%;
+    background-color: steelblue;
+    text-shadow: 0 0 3px skyblue  , 0 0 5px white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1::before, h1::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f0c9";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 0.5em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+h2{
+    padding-top: 20px;
+    text-align: center;
+    text-shadow: 0 0 3px steelblue  , 0 0 5px steelblue;
+}
+.schakel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 steelblue, 0 6px 20px 0 steelblue;
+    border-radius: 5px;
+    background-size: 40px;
+}
+.schakel:hover {
+    opacity: 0.5;
+    cursor: pointer;       
+}
+.kleur {
+    width: 75%;
+    height: 20px;
+    background: black;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+} 
+.kleur::before,
+.kleur::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 20px;
+    background: black;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+} 
+.kleur::before {
+    transform: translateY(-40px);
+}
+.kleur::after {
+    transform: translateY(40px);
+}
+#sidebar {
+    position: absolute;
+    width: 25%;
+    height: 568px;
+    left: -25%;
+    transition: 2s;
+    margin-top: 200px;
+    grid-row: 2;
+    
+}
+#sidebar.active {
+    left: 0;
+}
+#sidebar ul li {
+    list-style: none;
+    width: 100%;
+    height: 110px;
+    border-top: 3px solid white;
+    cursor: pointer;
+    text-align: padding 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+#home {
+    position: relative;
+    background-color: grey;
+  }
+  #rood {
+    background-color: red;
+    position: relative;
+  }
+  #oranje {
+    background-color: orange;
+    position: relative;
+  }
+  #paars {
+    background-color: purple;
+    position: relative;
+  }
+  #groen {
+    position: relative;
+    background-color: green;
+    border-bottom: 3px solid white;
+  }
+  .orde {
+    position: absolute;
+    left: 25px;
+    top: 40%;
+    font-size: 1.7rem;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+  }
+  .orde1 {
+    position: absolute;
+    left: 65px;
+    top: 38%;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+  .dif {
+    position: relative;
+    margin-top: 10px;
+    border-radius: 15%;
+    transform: translateX(55%);
+    width: 50vw;
+    height: 35vh;
+    font-size: 2rem;
+    background-color: skyblue;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    grid-row: 3;
+  }
+  .extra {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border: 2px solid white;
+    left: 42%;
+    box-shadow: 0 4px 8px 0 steelblue, 0 6px 20px 0 steelblue;
+  }
+  p {
+    padding-top: 15px;
+    text-align: center;
+  }
+  .rif {
+    position: absolute;
+    width: 500px;
+    height: 75px;
+    border: 2px solid black;
+    left: 25%;
+    top: 75%;
+    box-shadow: 0 4px 8px 0 steelblue, 0 6px 20px 0 steelblue;
+  }
+
+  
